@@ -1,5 +1,9 @@
 
-# 1.1.0
+# cyclocomp (development version)
+
+* cyclocomp is now much faster on long linear code (@etiennebacher, #21).
+
+# cyclocomp 1.1.0
 
 * New function `cyclocomp_package_dir` that works on a local package tree
 
@@ -8,6 +12,6 @@
 
 * New function `cyclocomp_q` that quotes the expression, @richierocks
 
-# 1.0.0
+# cyclocomp 1.0.0
 
 First public release.
