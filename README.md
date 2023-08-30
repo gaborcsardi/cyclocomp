@@ -7,12 +7,12 @@
 
 [![Project Status: Active - The project has reached a stable, usable
 state and is being actively
-developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![](http://www.r-pkg.org/badges/version/cyclocomp)](http://www.r-pkg.org/pkg/cyclocomp)
+developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.repostatus.org/#active)
+[![](https://www.r-pkg.org/badges/version/cyclocomp)](https://www.r-pkg.org/pkg/cyclocomp)
 [![CRAN RStudio mirror
-downloads](http://cranlogs.r-pkg.org/badges/cyclocomp)](http://www.r-pkg.org/pkg/cyclocomp)
+downloads](https://cranlogs.r-pkg.org/badges/cyclocomp)](https://www.r-pkg.org/pkg/cyclocomp)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/main.svg)](https://codecov.io/github/Gaborcsardi/cyclocomp?branch=main)
+Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/main.svg)](https://app.codecov.io/github/Gaborcsardi/cyclocomp?branch=main)
 [![R-CMD-check](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
