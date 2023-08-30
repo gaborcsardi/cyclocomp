@@ -3,6 +3,7 @@
 \docType{package}
 \name{cyclocomp}
 \alias{cyclocomp}
+\alias{cyclocomp-package}
 \alias{cyclocomp_q}
 \title{Cyclomatic Complexity of R Code}
 \usage{
@@ -77,8 +78,7 @@ cyclocomp(quote({
 }))
 }
 \seealso{
-Other cyclomatic complexity: 
-\code{\link{cyclocomp_package_dir}()},
-\code{\link{cyclocomp_package}()}
+Other cyclomatic.complexity: \code{\link{cyclocomp_package_dir}},
+  \code{\link{cyclocomp_package}}
 }
-\concept{cyclomatic complexity}
+

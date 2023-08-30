@@ -12,6 +12,7 @@ LazyData: true
 URL: https://github.com/gaborcsardi/cyclocomp
 BugReports: https://github.com/gaborcsardi/cyclocomp/issues
 Imports:
+    callr,
     crayon,
     desc,
     remotes,
