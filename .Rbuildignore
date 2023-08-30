@@ -4,5 +4,4 @@
 ^README.Rmd$
 ^.travis.yml$
 ^appveyor.yml$
-^cyclocomp\.Rproj$
 ^\.github$
