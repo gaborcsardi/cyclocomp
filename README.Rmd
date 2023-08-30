@@ -1,3 +1,8 @@
+---
+output:
+  github_document:
+always_allow_html: yes
+---
 
 ```{r, setup, echo = FALSE, message = FALSE}
 knitr::opts_chunk$set(
@@ -13,11 +18,11 @@ knitr::opts_chunk$set(
 > Cyclomatic Complexity of R Code
 
 [![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)
-[![Linux Build Status](https://travis-ci.org/MangoTheCat/cyclocomp.svg?branch=master)](https://travis-ci.org/MangoTheCat/cyclocomp)
-[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/MangoTheCat/cyclocomp?svg=true)](https://ci.appveyor.com/project/gaborcsardi/cyclocomp)
+[![Linux Build Status](https://travis-ci.org/Gaborcsardi/cyclocomp.svg?branch=master)](https://travis-ci.org/Gaborcsardi/cyclocomp)
+[![Windows Build status](https://ci.appveyor.com/api/projects/status/github/Gaborcsardi/cyclocomp?svg=true)](https://ci.appveyor.com/project/gaborcsardi/cyclocomp)
 [![](http://www.r-pkg.org/badges/version/cyclocomp)](http://www.r-pkg.org/pkg/cyclocomp)
 [![CRAN RStudio mirror downloads](http://cranlogs.r-pkg.org/badges/cyclocomp)](http://www.r-pkg.org/pkg/cyclocomp)
-[![Coverage Status](https://img.shields.io/codecov/c/github/MangoTheCat/cyclocomp/master.svg)](https://codecov.io/github/MangoTheCat/cyclocomp?branch=master)
+[![Coverage Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/master.svg)](https://codecov.io/github/Gaborcsardi/cyclocomp?branch=master)
 
 Cyclomatic complexity is a software metric (measurement), used to indicate
   the complexity of a program. It is a quantitative measure of the number of
@@ -27,7 +32,7 @@ Cyclomatic complexity is a software metric (measurement), used to indicate
 ## Installation
 
 ```{r eval = FALSE}
-devtools::install_github("MangoTheCat/cyclocomp")
+devtools::install_github("Gaborcsardi/cyclocomp")
 ```
 
 ## Usage
@@ -68,7 +73,7 @@ An `if` with an `else` branch:
 cyclocomp(quote({
   if (condition) this else that
 }))
-  ```
+```
 
 Loops:
 
@@ -130,4 +135,4 @@ cyclocomp(f)
 
 ## License
 
-MIT © Mango Solutions
+MIT © Mango Solutions; Posit Software, PBC
