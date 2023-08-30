@@ -78,7 +78,15 @@ cyclocomp(quote({
 }))
 }
 \seealso{
-Other cyclomatic.complexity: \code{\link{cyclocomp_package_dir}},
-  \code{\link{cyclocomp_package}}
+Useful links:
+\itemize{
+  \item \url{https://github.com/gaborcsardi/cyclocomp}
+  \item Report bugs at \url{https://github.com/gaborcsardi/cyclocomp/issues}
 }
 
+
+Other cyclomatic complexity: 
+\code{\link{cyclocomp_package_dir}()},
+\code{\link{cyclocomp_package}()}
+}
+\concept{cyclomatic complexity}

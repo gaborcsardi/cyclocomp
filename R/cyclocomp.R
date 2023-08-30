@@ -8,7 +8,7 @@
 #'
 #' @docType package
 #' @name cyclocomp
-NULL
+"_PACKAGE"
 
 #' Cyclomatic Complexity of R Code
 #'
