@@ -12,7 +12,7 @@ developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repo
 [![CRAN RStudio mirror
 downloads](http://cranlogs.r-pkg.org/badges/cyclocomp)](http://www.r-pkg.org/pkg/cyclocomp)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/master.svg)](https://codecov.io/github/Gaborcsardi/cyclocomp?branch=master)
+Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/main.svg)](https://codecov.io/github/Gaborcsardi/cyclocomp?branch=main)
 [![R-CMD-check](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
