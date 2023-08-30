@@ -7,3 +7,4 @@
 ^\.github$
 ^cyclocomp\.Rproj$
 ^README\.html$
+^revdep$
