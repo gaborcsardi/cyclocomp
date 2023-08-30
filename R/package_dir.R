@@ -22,7 +22,7 @@ cyclocomp_package_dir <- function(path = ".") {
 
   targz <- build_package(path)
 
-  install_local(targz, lib = tmp)
+  install_local(targz, lib = tmp, upgrade = "never")
 
   r(libpath = c(tmp, .libPaths()),
     function(pkg) {
