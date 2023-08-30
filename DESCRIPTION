@@ -8,7 +8,6 @@ Description: Cyclomatic complexity is a software metric (measurement),
     measure of the number of linearly independent paths through a program's
     source code. It was developed by Thomas J. McCabe, Sr. in 1976.
 License: MIT + file LICENSE
-LazyData: true
 URL: https://github.com/gaborcsardi/cyclocomp
 BugReports: https://github.com/gaborcsardi/cyclocomp/issues
 Imports:
