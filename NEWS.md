@@ -1,3 +1,5 @@
+# cyclocomp (development version)
+
 # cyclocomp 1.1.1
 
 * cyclocomp is now much faster on long linear code (@etiennebacher, #21).
