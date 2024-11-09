@@ -8,3 +8,4 @@
 ^cyclocomp\.Rproj$
 ^README\.html$
 ^revdep$
+^codecov\.yml$
