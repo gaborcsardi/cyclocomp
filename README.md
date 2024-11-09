@@ -11,8 +11,8 @@ developed.](https://www.repostatus.org/badges/latest/active.svg)](https://www.re
 [![](https://www.r-pkg.org/badges/version/cyclocomp)](https://www.r-pkg.org/pkg/cyclocomp)
 [![CRAN RStudio mirror
 downloads](https://cranlogs.r-pkg.org/badges/cyclocomp)](https://www.r-pkg.org/pkg/cyclocomp)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/Gaborcsardi/cyclocomp/main.svg)](https://app.codecov.io/github/Gaborcsardi/cyclocomp?branch=main)
+[![Codecov test
+coverage](https://codecov.io/gh/gaborcsardi/cyclocomp/graph/badge.svg)](https://app.codecov.io/gh/gaborcsardi/cyclocomp)
 [![R-CMD-check](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/gaborcsardi/cyclocomp/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
