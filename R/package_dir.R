@@ -21,7 +21,7 @@ cyclocomp_package_dir <- function(path = ".", quiet = TRUE) {
 
   pkgname <- desc_get("Package", file = file.path(path, "DESCRIPTION"))
 
-  targz <- build_package(path, quiet = quiet)
+  targz <- build_package(path)
 
   install_local(targz, lib = tmp, upgrade = "never", quiet = TRUE)
 
