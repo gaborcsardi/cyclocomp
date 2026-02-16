@@ -2,8 +2,8 @@
 % Please edit documentation in R/cyclocomp.R
 \docType{package}
 \name{cyclocomp}
-\alias{cyclocomp}
 \alias{cyclocomp-package}
+\alias{cyclocomp}
 \alias{cyclocomp_q}
 \title{Cyclomatic Complexity of R Code}
 \usage{
@@ -86,7 +86,7 @@ Useful links:
 
 
 Other cyclomatic complexity: 
-\code{\link{cyclocomp_package_dir}()},
-\code{\link{cyclocomp_package}()}
+\code{\link{cyclocomp_package}()},
+\code{\link{cyclocomp_package_dir}()}
 }
 \concept{cyclomatic complexity}

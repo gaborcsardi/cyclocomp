@@ -5,6 +5,7 @@
 #' directory.
 #'
 #' @param path Path to the root directory of the R package.
+#' @param quiet If `FALSE`, display package build information.
 #' @return Data frame with two columns: \code{name} and \code{cyclocomp}.
 #'
 #' @family cyclomatic complexity
@@ -13,16 +14,16 @@
 #' @importFrom desc desc_get
 #' @export
 
-cyclocomp_package_dir <- function(path = ".") {
+cyclocomp_package_dir <- function(path = ".", quiet = TRUE) {
   tmp <- tempfile()
   dir.create(tmp)
   on.exit(unlink(tmp, recursive = TRUE), add = TRUE)
 
   pkgname <- desc_get("Package", file = file.path(path, "DESCRIPTION"))
 
-  targz <- build_package(path)
+  targz <- build_package(path, quiet = quiet)
 
-  install_local(targz, lib = tmp, upgrade = "never")
+  install_local(targz, lib = tmp, upgrade = "never", quiet = TRUE)
 
   r(libpath = c(tmp, .libPaths()),
     function(pkg) {

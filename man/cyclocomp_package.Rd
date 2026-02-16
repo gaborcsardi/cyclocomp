@@ -24,7 +24,7 @@ cyclocomp_package("methods")
 }
 \seealso{
 Other cyclomatic complexity: 
-\code{\link{cyclocomp_package_dir}()},
-\code{\link{cyclocomp}()}
+\code{\link{cyclocomp}()},
+\code{\link{cyclocomp_package_dir}()}
 }
 \concept{cyclomatic complexity}

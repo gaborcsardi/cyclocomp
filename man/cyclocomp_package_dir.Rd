@@ -4,10 +4,12 @@
 \alias{cyclocomp_package_dir}
 \title{Cyclomatic complexity of a local package}
 \usage{
-cyclocomp_package_dir(path = ".")
+cyclocomp_package_dir(path = ".", quiet = TRUE)
 }
 \arguments{
 \item{path}{Path to the root directory of the R package.}
+
+\item{quiet}{If `FALSE`, display package build information.}
 }
 \value{
 Data frame with two columns: \code{name} and \code{cyclocomp}.
@@ -18,7 +20,7 @@ directory.
 }
 \seealso{
 Other cyclomatic complexity: 
-\code{\link{cyclocomp_package}()},
-\code{\link{cyclocomp}()}
+\code{\link{cyclocomp}()},
+\code{\link{cyclocomp_package}()}
 }
 \concept{cyclomatic complexity}
