@@ -1,5 +1,3 @@
-context("Break in loops")
-
 test_that("break in simple loops", {
   f <- function() {
     for (i in 1:10) {

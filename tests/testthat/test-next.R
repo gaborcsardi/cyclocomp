@@ -1,5 +1,3 @@
-context("next")
-
 test_that("next works", {
   f <- function() {
     for (i in 1:10) {

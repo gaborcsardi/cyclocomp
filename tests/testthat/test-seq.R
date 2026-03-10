@@ -1,5 +1,3 @@
-context("Simple sequences")
-
 test_that("sequences are simple", {
   f <- function() {
     "foo"

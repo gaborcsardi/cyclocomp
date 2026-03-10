@@ -1,5 +1,3 @@
-context("cyclocomp_q")
-
 test_that("cyclocomp_q works the same as cyclocomp + quote", {
   expect_equal(
     cyclocomp_q(

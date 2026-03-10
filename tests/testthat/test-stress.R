@@ -1,5 +1,3 @@
-context("Stress test on base R functions")
-
 do_pkg <- function(pkg) {
   alln <- ls(asNamespace(pkg))
   for (n in alln) {

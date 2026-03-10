@@ -1,5 +1,3 @@
-context("&& and ||")
-
 test_that("&& works well", {
   f <- function() {
     FALSE && TRUE

@@ -1,5 +1,3 @@
-context("If")
-
 test_that("simple if statements", {
   f <- function() {
     if (TRUE) {

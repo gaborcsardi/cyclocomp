@@ -1,5 +1,3 @@
-context("CC of a package")
-
 test_that("cyclocomp_package", {
   res <- cyclocomp_package("cyclocomp")
   expect_true(inherits(res, "data.frame"))

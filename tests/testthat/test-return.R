@@ -1,5 +1,3 @@
-context("Return")
-
 test_that("returns work well", {
   f <- function() {
     g <- function() {
