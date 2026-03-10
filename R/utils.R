@@ -1,8 +1,6 @@
-
 what_expr <- function(expr) {
   if (is.call(expr)) {
     paste0(as.character(expr[[1]])[1], "()")
-
   } else {
     typeof(expr)
   }

@@ -1,8 +1,6 @@
-
 #' @importFrom utils head tail
 
 flowgraph <- function(expr) {
-
   prealloc <- 4000
 
   num_nodes <- 0
@@ -36,7 +34,7 @@ flowgraph <- function(expr) {
     n <- length(args) - 1
     if (n > 0) {
       edges$from[num_edges + (1:n)] <<- head(args, -1)
-      edges$to[num_edges + (1:n)]   <<- tail(args, -1)
+      edges$to[num_edges + (1:n)] <<- tail(args, -1)
       num_edges <<- num_edges + n
     }
   }
@@ -87,49 +85,40 @@ flowgraph <- function(expr) {
   }
 
   walk_lang <- function(x, id) {
-
-    if (is.call(x) && identical(x[[1]], quote(return)) &&
-        is.primitive(eval(x[[1]]))) {
+    if (
+      is.call(x) &&
+        identical(x[[1]], quote(return)) &&
+        is.primitive(eval(x[[1]]))
+    ) {
       walk_return(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`for`))) {
       walk_for(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`while`))) {
       walk_while(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`repeat`))) {
       walk_repeat(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`break`))) {
       walk_break(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`next`))) {
       walk_next(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`if`)) && length(x) == 3) {
       walk_if(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`if`)) && length(x) == 4) {
       walk_ifelse(x, id)
-
-    } else if (is.call(x) &&
-               (identical(x[[1]], quote(`&&`)) || identical(x[[1]], quote(`||`)))) {
+    } else if (
+      is.call(x) &&
+        (identical(x[[1]], quote(`&&`)) || identical(x[[1]], quote(`||`)))
+    ) {
       walk_andor(x, id)
-
     } else if (is.function(x)) {
       walk_function(x, id)
-
     } else if (is.call(x) && identical(x[[1]], quote(`function`))) {
       walk_function_call(x, id)
-
     } else if (is.call(x) || is.pairlist(x) || is.expression(x) || is.list(x)) {
       walk_list(x, id)
-
     } else {
       add_node(x, id, what_atomic(x))
     }
-
   }
 
   walk_return <- function(x, id) {
@@ -218,7 +207,6 @@ flowgraph <- function(expr) {
       functions_push(id)
       walk_lang(body(x), id.1(id))
       functions_pop()
-
     } else {
       ## Function with arguments
       add_node(x, id, "function", last = id.2(id))
@@ -237,7 +225,6 @@ flowgraph <- function(expr) {
       functions_push(id)
       walk_lang(x[[3]], id.1(id))
       functions_pop()
-
     } else {
       ## Function with arguments
       add_node(x, id, "function", last = id.2(id))
@@ -257,7 +244,9 @@ flowgraph <- function(expr) {
     if (length(x) != 0) {
       add_edges(id, id.1(id))
       for (i in seq_along(x)) {
-        if (i != 1) add_edges(paste0(id, ".", i - 1), paste0(id, ".", i))
+        if (i != 1) {
+          add_edges(paste0(id, ".", i - 1), paste0(id, ".", i))
+        }
         walk_lang(x[[i]], paste0(id, ".", i))
       }
     }

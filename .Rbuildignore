@@ -8,3 +8,5 @@
 ^cyclocomp\.Rproj$
 ^README\.html$
 ^revdep$
+^[.]?air[.]toml$
+^\.vscode$

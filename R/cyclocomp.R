@@ -1,4 +1,3 @@
-
 #' Cyclomatic Complexity of R Code
 #'
 #' Cyclomatic complexity is a software metric (measurement), used to indicate
@@ -26,10 +25,10 @@
 #' )
 #' cyclocomp(ls)
 #' cyclocomp(cyclocomp)
-#' 
+#'
 #' ## Or a quoted expression
 #' cyclocomp(quote( if (condition) "foo" else "bar" ))
-#' 
+#'
 #' ## cyclocomp_q quotes the expression for you
 #' cyclocomp_q(while (condition) { loop })
 #'

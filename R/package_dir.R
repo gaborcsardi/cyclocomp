@@ -1,4 +1,3 @@
-
 #' Cyclomatic complexity of a local package
 #'
 #' Automatically builds the package and installs it to a temporary
@@ -25,7 +24,8 @@ cyclocomp_package_dir <- function(path = ".", quiet = TRUE) {
 
   install_local(targz, lib = tmp, upgrade = "never", quiet = TRUE)
 
-  r(libpath = c(tmp, .libPaths()),
+  r(
+    libpath = c(tmp, .libPaths()),
     function(pkg) {
       loadNamespace(pkg)
       cyclocomp::cyclocomp_package(pkg)
@@ -38,7 +38,6 @@ cyclocomp_package_dir <- function(path = ".", quiet = TRUE) {
 #' @importFrom callr rcmd_safe
 
 build_package <- function(path) {
-
   path <- normalizePath(path)
 
   tmpdir <- tempfile()
@@ -70,21 +69,24 @@ build_package <- function(path) {
 #' @importFrom crayon yellow red underline
 
 report_system_error <- function(msg, status) {
-
-  if (status$status == 0) return()
+  if (status$status == 0) {
+    return()
+  }
 
   if (status$stderr == "") {
     stop(
-      msg, ", unknown error, standard output:\n",
+      msg,
+      ", unknown error, standard output:\n",
       yellow(status$stdout),
       call. = FALSE
     )
-
   } else {
     stop(
       underline(yellow(paste0("\n", msg, ", standard output:\n\n"))),
-      yellow(status$stdout), "\n",
-      underline(red("Standard error:\n\n")), red(status$stderr),
+      yellow(status$stdout),
+      "\n",
+      underline(red("Standard error:\n\n")),
+      red(status$stderr),
       call. = FALSE
     )
   }

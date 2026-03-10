@@ -1,4 +1,3 @@
-
 context("CC of a package")
 
 test_that("cyclocomp_package", {

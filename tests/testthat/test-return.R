@@ -1,8 +1,6 @@
-
 context("Return")
 
 test_that("returns work well", {
-
   f <- function() {
     g <- function() {
       "foo"
@@ -43,6 +41,9 @@ test_that("returns work well", {
   }
   expect_equal(cyclocomp(f), 1)
 
-  f <- function() { return(); 1; }
+  f <- function() {
+    return()
+    1
+  }
   expect_equal(cyclocomp(f), 2)
 })

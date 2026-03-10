@@ -1,4 +1,3 @@
-
 context("Stress test on base R functions")
 
 do_pkg <- function(pkg) {
@@ -22,7 +21,6 @@ expect_silent <- function(expr, info = NULL, label = NULL) {
 }
 
 test_that("some base packages", {
-
   skip("Takes too long to run currently")
 
   do_pkg("base")
