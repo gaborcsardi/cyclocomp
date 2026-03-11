@@ -1,3 +1,5 @@
+# cyclocomp (development version)
+
 # cyclocomp 1.1.2
 
 * `cyclocomp_package_dir()` now has a `quiet` argument (@mpadge, #28).
