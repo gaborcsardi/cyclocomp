@@ -1,5 +1,7 @@
 # cyclocomp (development version)
 
+* `cyclocomp_package_dir()` now has a `quiet` argument (@mpadge, #28).
+
 # cyclocomp 1.1.1
 
 * cyclocomp is now much faster on long linear code (@etiennebacher, #21).
